@@ -1,0 +1,11 @@
+.Navbar{
+  align-items: left;
+  width: 480px;
+  margin: 0px auto 0px auto;
+  padding: 10px 0px;
+
+  @media screen and (max-width: 500px) {
+    width: initial;
+    padding: 10px 10px;
+  }
+}

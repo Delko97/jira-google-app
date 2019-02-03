@@ -1,0 +1,22 @@
+.LanguageSwitcher {
+  float: left;
+  width: 150px;
+}
+select {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 8px;
+}
+/* Hidden placeholder */
+select option[disabled]:first-child {
+  display: none;
+}
+
+select option {
+  background-color: transparent;
+}
+
+.Text--white{
+  color: white;
+}
+

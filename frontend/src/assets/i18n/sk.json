@@ -1,0 +1,47 @@
+{
+  "login": {
+    "loginTitle": "Prihlásenie",
+    "loginUsername": "Prihlasovacie meno",
+    "loginPassword": "Heslo",
+    "usernameRequired": "Zadajte prihlasovacie meno!",
+    "passwordRequired": "Zadajte heslo!"
+
+  },
+  "button": {
+    "loginButton": "Prihlásiť",
+    "submitButton": "Odoslať"
+  },
+  "navbar": {
+    "dashboard": "Nástenka",
+    "issue": "Vytvor problém",
+    "logout": "Odhlásiť",
+    "calendar": "Kalendár"
+  },
+  "footer": {
+    "created": "Vytvorené od",
+    "rights": "Všetky práva vyhradené"
+  },
+  "form": {
+    "Summary": "Sumár",
+    "Attachment": "Príloha",
+    "Due date": "Dátum do:",
+    "Description": "Opis",
+    "Linked Issues": "Spojené s problémami",
+    "Start date": "Dátum od",
+    "Labels": "Štítky",
+    "Watchers": "Pozorovatelia",
+    "Sick leave type": "Typ maródky",
+    "Examination date": "Dátum vyšetrenia",
+    "Urgency": "Urgencia",
+    "Software": "Softvér",
+    "Business impact": "Vplyv na biznis",
+    "Users": "Užívatelia",
+    "Access level": "Prístupový level",
+    "Repository": "Repozitár",
+    "Repository path": "Cesta k repozitáru",
+    "Project/Space key": "Projekt/kľúč",
+    "project": "Projekt:",
+    "issueType": "Typ problému:"
+  }
+
+}

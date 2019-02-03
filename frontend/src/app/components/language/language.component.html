@@ -1,0 +1,8 @@
+<div class="LanguageSwitcher">
+  <select class="btn btn-dark" (change)="changeLanguage($event)">
+    <option value="" selected disabled>{{currentLang}}</option>
+    <option *ngFor="let lang of languages" [value]="lang.value" class="Text--white">
+      {{lang.viewValue}}
+    </option>
+  </select>
+</div>

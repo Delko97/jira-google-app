@@ -1,0 +1,17 @@
+<form #f="ngForm">
+  <div class="input-group">
+    <input class="form-control" matInput [matAutocomplete]="auto"
+           name="joke" #jokeField="ngModel"
+           [(ngModel)]="field.field.value">
+  </div>
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let user of users | userPipe: field.field.value" [value]="user.name">
+      <img [src]="user.avatar" style="border-radius: 50%; max-width: 24px"> {{user.name}} | {{user.emailAddress}}
+    </mat-option>
+  </mat-autocomplete>
+</form>
+
+
+
+
+

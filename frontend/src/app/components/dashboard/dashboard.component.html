@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="head">
+  <h2><b>Dashboard</b></h2>
+  </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card shadow">
+            <div class="card-header Border">
+              <h4 class="card-title float-left" title="Introduction">Introduction</h4>
+              <span class="float-right">
+                <a href="" class="fa fa-caret-down mr-2"></a>
+                <a href="" class="fa fa-times"></a>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-subtitle">
+                <h3>Welcome to Jira</h3>
+              </div>
+              <p>Not sure where to start? Check out the <a id="jira101" alt="Get help!"
+                                                           href="https://confluence.atlassian.com/display/JIRASOFTWARECLOUD/Getting+started">
+                Jira 101 guide</a> and <a id="jiraTraining" href="http://www.atlassian.com/training/">Atlassian training
+                course</a>.</p>
+              <p>You can <a id="edit-introduction" href="/secure/admin/jira/EditApplicationProperties!default.jspa">customize
+                this text</a> in the Administration section.</p>
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+<div class="Card">
+        <div class="col-sm-12">
+          <div class="card shadow">
+            <div class="card-header Border">
+              <h4 class="card-title float-left" title="Assigned to Me">Assigned to Me</h4>
+              <span class="float-right">
+                <a href="" class="fa fa-caret-down mr-2"></a>
+                <a href="" class="fa fa-times"></a>
+              </span>
+            </div>
+            <div class="card-body" *ngIf="issue">
+              <div class="Issue_Name"><b>Issue name:</b> {{issue.issuename}}</div>
+
+              <div class="Time"><b>Created: </b> {{issue.created_date}} </div>
+
+              <div> <span class="Name"><b> Creator:</b> {{issue.creator_name}}</span></div>
+
+
+              <div> <b>Description:</b> {{issue.description}}</div>
+
+              <div class="Creator"> <b>Contact:</b> {{issue.creator_email}}</div>
+
+              <!-- <div class="gadget-inline" style="height: 40px;">
+                <div class="empty-results">You currently have no <a href="#">issues</a> assigned to you. Enjoy your day!</div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+</div>
+
+        <!--<div class="col-sm-12">-->
+          <!--<div class="card shadow">-->
+            <!--<div class="card-header Border">-->
+              <!--<h4 class="card-title float-left" title="Activity Stream">Activity Stream</h4>-->
+              <!--<span class="float-right">-->
+                <!--<a href="" class="fa fa-caret-down mr-2"></a>-->
+                <!--<a href="" class="fa fa-times"></a>-->
+              <!--</span>-->
+            <!--</div>-->
+            <!--<div class="card-body">-->
+
+              <!--<div class="Time"> {{issue.created_date}} </div>-->
+
+              <!--<div> <span class="Name">{{issue.creator_name}}</span> create {{issue.issuename}}</div>-->
+
+              <!--<div class="Description"> Description: {{issue.description}}</div>-->
+
+              <!--<div class="Creator"> Created by {{issue.creator_name}} contact {{issue.creator_email}}</div>-->
+
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+</div>
+
+<div style="margin-bottom: 175px"></div>

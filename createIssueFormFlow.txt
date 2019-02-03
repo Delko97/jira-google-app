@@ -1,0 +1,37 @@
+--------------------------------------------------------
+-
+-       Issue (DropDown Menu)
+-
+-
+-
+--------------------------------------------------------
+
+            |   - request na BE (String)
+            |   - response: Map fieldov
+
+Map<String name, Object obj> 
+            
+Object obj (String id, String type, String value)             
+            
+            |  - na FE budes mat totozny objekt
+            |  - zobrazujes name + input[type]
+            v
+             
+--------------------------------------------------------
+-
+-       Issue (DropDown Menu)
+-
+-       field1.name: input[field1.obj.type]
+-
+-       field2.name: input[field2.obj.type]
+-
+-       ...
+-
+-
+-        (submit)     (cancel)
+---------------------------------------------------------
+
+            |   - submit => odosle vyplnenú Mapu na BE 
+            O   - vsetky hodnoty uloz ako String
+            
+            

@@ -1,0 +1,87 @@
+.MobileWidth {
+  align-items: left;
+  width: 480px;
+  margin: 0px auto 0px auto;
+  padding: 10px 0px;
+
+
+  @media screen and (max-width: 500px) {
+    width: initial;
+    padding: 10px 10px;
+  }
+}
+
+footer {
+  background: #212121;
+  color: white;
+  justify-content: space-between;
+  padding: 15px 0px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+    text-align: center;
+    position: inherit;
+  }
+}
+
+.Footer__copyright {
+  align-items: flex-end;
+}
+
+.Footer__logo {
+  @media screen and (max-width: 700px) {
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+.Footer__menu {
+  align-items: flex-start;
+}
+
+.Footer__nav {
+  margin: 0px 0px 15px 0px;
+}
+
+.Footer__link {
+  font-family: Source Sans Pro;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  color: #FFF;
+  padding: 0px 16px 0px 0px;
+}
+
+.Footer__link:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Footer__link--primary {
+  font-weight: 700;
+}
+
+.Footer__link--social {
+  font-size: 1.6em;
+  padding: 0px 24px 0px 0px;
+}
+
+.Footer__link--secondary {
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.no-margin {
+  margin: 0px;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}

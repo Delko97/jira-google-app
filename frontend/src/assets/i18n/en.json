@@ -1,0 +1,46 @@
+{
+  "login": {
+    "loginTitle": "Login",
+    "loginUsername": "Username",
+    "loginPassword": "Password",
+    "usernameRequired": "Username is required!",
+    "passwordRequired": "Password is required!"
+
+  },
+  "button": {
+    "loginButton": "Log In",
+    "submitButton": "Submit"
+  },
+  "navbar": {
+    "dashboard": "Dashboard",
+    "issue": "Create Issue",
+    "logout": "Log Out",
+    "calendar": "Calendar"
+  },
+  "footer": {
+    "created": "Created by",
+    "rights": "All rights reserved"
+  },
+  "form": {
+    "Summary": "Summary",
+    "Attachment": "Attachment",
+    "Due date": "Due date",
+    "Description": "Description",
+    "Linked Issues": "Linked Issues",
+    "Start date": "Start date",
+    "Labels": "Labels",
+    "Watchers": "Watchers",
+    "Sick leave type": "Sick leave type",
+    "Examination date": "Examination date",
+    "Urgency": "Urgency",
+    "Software": "Software",
+    "Business impact": "Business impact",
+    "Users": "Users",
+    "Access level": "Access level",
+    "Repository": "Repository",
+    "Repository path": "Repository path",
+    "Project/Space key": "Project/Space key",
+    "project": "Project:",
+    "issueType": "Issue Type:"
+  }
+}

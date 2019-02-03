@@ -1,0 +1,15 @@
+{
+  "name": "timovy_projekt",
+  "version": "1.0.0",
+  "description": "```\r -Róbert Nagy\r -Peter Domonkoš\r -Michal Bálint\r -Dominik Dujava\r -Adam Dely\r ```\r ###### Mentor univerzity: \r ```\r Sergej Chodarev\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.kpi.fei.tuke.sk:dd193bj/timovy_projekt.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

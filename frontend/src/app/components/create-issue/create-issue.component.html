@@ -1,0 +1,70 @@
+<div *ngIf="message" class="alert-container">
+  <div class="alert-success Form BorderRadius" role="alert">
+    <strong>Request successfull!</strong> created issue with id: <strong>{{message}} </strong>
+  </div>
+</div>
+<div *ngIf="messageAttachments" class="alert-container">
+  <div class="alert-success Form BorderRadius" role="alert">
+    <strong>Request successfull!</strong> {{messageAttachments}}
+  </div>
+</div>
+<div *ngIf="errors.length !=0" class="alert-container">
+  <div *ngFor="let err of errors" class="alert-danger Form BorderRadius" role="alert">
+    {{err}}
+  </div>
+</div>
+<mat-form-field [formGroup]="headerForm" style="width: 100%;">
+  <label for="project">{{'form.project' | translate}} </label>
+  <mat-select id="project" formControlName="project" class="form-control" style="width: 100%">
+    <mat-option *ngFor="let p of projects" [value]="p">{{ p.key }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<br>
+<mat-form-field [formGroup]="headerForm" style="width: 100%">
+  <label for="issuetype">{{'form.issueType' | translate}}</label>
+  <mat-select id="issuetype" formControlName="issuetype" class="form-control">
+    <mat-option *ngFor="let t of issueTypes" [value]="t">{{ t.name }}</mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+
+<div *ngIf="fields !== undefined && fields.length !== 0">
+  <div *ngFor="let field of fields" class="form-row align-items-center">
+    <label *ngIf="field.field.type === 'string' || field.field.type === 'date' || field.field.type === 'attachment'
+                  || field.field.type === 'user' || field.field.type === 'number' || field.field.type === 'datetime'
+                  || field.field.type === 'option'">
+      {{'form.' + field.field.id | translate}}</label>
+    <input *ngIf="field.field.type === 'string'" [(ngModel)]="field.field.value" type="text" class="form-control">
+    <input *ngIf="field.field.type === 'attachment'" (change)="selectFile($event)" type="file" class="form-control">
+    <div *ngIf="field.field.type === 'attachment'">
+      <button *ngFor="let file of attachments; let i = index"
+              style="margin: 3px; padding: 3px; ; color: white; background: #000066; border-radius: 10px"
+              (click)="removeFile(i)">
+        {{file.name}}
+      </button>
+    </div>
+    <div *ngIf="field.field.type === 'option'" style="width: 100%">
+      <select [(ngModel)]="field.field.value" class="form-control">
+        <option *ngFor="let val of field.field.allowedValues" [ngValue]="val">{{ val }}</option>
+      </select>
+    </div>
+
+    <input *ngIf="field.field.type === 'number'" [(ngModel)]="field.field.value" type="number" class="form-control">
+    <input *ngIf="field.field.type === 'date'" [(ngModel)]="field.field.value" type="date" class="form-control">
+    <input *ngIf="field.field.type === 'datetime'" [(ngModel)]="field.field.value" type="datetime-local"
+           class="form-control">
+
+    <app-user-input style="width: 100%" *ngIf="field.field.type === 'user'" [field]="field" [users]="users">
+      Loading component
+    </app-user-input>
+
+  </div>
+</div>
+<br>
+
+<button *ngIf="fields !== undefined && fields.length !== 0" type="button" (click)="OnSubmit()" class="btn btn-primary"
+        data-toggle="button" aria-pressed="false"> Submit
+</button>
+<br>
+<div style="margin-bottom: 175px"></div>

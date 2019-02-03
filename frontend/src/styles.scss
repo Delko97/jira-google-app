@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+html {
+  height: 100%;
+  position: relative;
+  font-family: Source Sans Pro;
+  margin: 0;
+}
+
+.Background {
+  background: #FAFAFA;
+}
+
+
+body {
+  height: 100%;
+  background-color: #FAFAFA !important;
+  color: #333;
+  margin: 0;
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+.Background-jira {
+  background: #0033cc;
+}
+
+.BorderRadius {
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+}
+
